@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Bookly Support</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">▤</span> BOOKLY</div>
+
+      <div class="nav-section">
+        <div class="nav-label">SUPPORT</div>
+        <button class="nav-item active">💬 Support</button>
+        <button class="nav-item" id="new-conversation">＋ New conversation</button>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-label">HISTORY</div>
+        <div id="history-list" class="history-list">
+          <div class="history-empty">No conversations yet</div>
+        </div>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="footer-title">Bookly Support</div>
+        <div class="footer-sub">AI-powered assistance</div>
+        <div class="footer-status"><span class="dot dot-live"></span> Online</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="main-header">
+        <div>
+          <h1>Bookly Support</h1>
+          <p>We're here to help with your orders, returns and account.</p>
+        </div>
+        <div class="header-actions">
+          <span class="pill"><span class="dot dot-live"></span> AI Support</span>
+          <button id="toggle-activity" class="icon-btn" title="Toggle agent activity">⤢</button>
+        </div>
+      </header>
+
+      <section id="empty-state" class="empty-state">
+        <h2>How can we help?</h2>
+        <p>I can help with orders, shipping, returns and account access.</p>
+        <div class="quick-actions">
+          <button class="quick-card" data-prompt="Where is my order?">
+            <span class="qc-icon">📦</span>
+            <span class="qc-text"><span class="qc-title">Track an order</span><span class="qc-sub">Where is my order?</span></span>
+          </button>
+          <button class="quick-card" data-prompt="My order arrived damaged.">
+            <span class="qc-icon">⚠️</span>
+            <span class="qc-text"><span class="qc-title">Wrong or damaged item</span><span class="qc-sub">My order arrived with a problem</span></span>
+          </button>
+          <button class="quick-card" data-prompt="I'd like to return an order.">
+            <span class="qc-icon">↺</span>
+            <span class="qc-text"><span class="qc-title">Return an order</span><span class="qc-sub">I'd like to return something</span></span>
+          </button>
+          <button class="quick-card" data-prompt="I can't access my account.">
+            <span class="qc-icon">🔑</span>
+            <span class="qc-text"><span class="qc-title">Account access</span><span class="qc-sub">I can't access my account</span></span>
+          </button>
+        </div>
+      </section>
+
+      <div id="log" class="log"></div>
+
+      <form id="composer" class="composer">
+        <input id="input" type="text" autocomplete="off" placeholder="Ask Bookly Support anything…" />
+        <button type="submit" class="send-btn" aria-label="Send">↑</button>
+      </form>
+      <div class="composer-hint">Enter to send</div>
+    </main>
+
+    <aside id="activity-panel" class="activity-panel">
+      <div class="activity-header">
+        <span class="activity-icon">∿</span>
+        <div>
+          <div class="activity-title">Agent activity</div>
+          <div class="activity-sub">System events</div>
+        </div>
+      </div>
+      <div id="activity-log" class="activity-log">
+        <p class="activity-empty">No activity yet. System events appear here as the agent works on a request.</p>
+      </div>
+      <div class="activity-footer">🔒 Observable system events only. Internal model reasoning is never shown.</div>
+    </aside>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

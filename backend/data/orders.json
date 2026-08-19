@@ -1,0 +1,65 @@
+{
+  "BK-1001": {
+    "email": "jane.doe@example.com",
+    "item": "The Midnight Library (Hardcover)",
+    "price": 26.99,
+    "status": "processing",
+    "order_date": "2026-08-15",
+    "delivered_date": null,
+    "refunded": false
+  },
+  "BK-1002": {
+    "email": "jane.doe@example.com",
+    "item": "Atomic Habits (Paperback)",
+    "price": 16.99,
+    "status": "shipped",
+    "order_date": "2026-08-10",
+    "delivered_date": null,
+    "refunded": false
+  },
+  "BK-1003": {
+    "email": "sam.lee@example.com",
+    "item": "Project Hail Mary (Hardcover)",
+    "price": 27.99,
+    "status": "delivered",
+    "order_date": "2026-07-28",
+    "delivered_date": "2026-08-01",
+    "refunded": false
+  },
+  "BK-1004": {
+    "email": "sam.lee@example.com",
+    "item": "Dune (Paperback)",
+    "price": 15.99,
+    "status": "delivered",
+    "order_date": "2026-05-01",
+    "delivered_date": "2026-05-05",
+    "refunded": false
+  },
+  "BK-1005": {
+    "email": "priya.k@example.com",
+    "item": "The Hobbit (Boxed Set)",
+    "price": 42.99,
+    "status": "delivered",
+    "order_date": "2026-07-01",
+    "delivered_date": "2026-07-05",
+    "refunded": true
+  },
+  "BK-1006": {
+    "email": "jane.doe@example.com",
+    "item": "The Complete Cookbook Collection (Boxed Set)",
+    "price": 89.99,
+    "status": "delivered",
+    "order_date": "2026-08-05",
+    "delivered_date": "2026-08-08",
+    "refunded": false
+  },
+  "BK-1007": {
+    "email": "sam.lee@example.com",
+    "item": "The Pragmatic Programmer (Paperback)",
+    "price": 21.99,
+    "status": "delivered",
+    "order_date": "2026-08-01",
+    "delivered_date": "2026-08-04",
+    "refunded": false
+  }
+}
